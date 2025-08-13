@@ -1,0 +1,192 @@
+%-------------------------
+% Resume in Latex
+% Author : Venu Dattathreya Vemuru
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage{helvet}  % Arial/Helvetica equivalent
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for one-page fit
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - tighter spacing
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands - tighter spacing
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumePublicationsHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+   \textbf{\href {}}{\Large Venu Dattathreya Vemuru} & Email: \href{mailto:venudattathreya@gmail.com}{venudattathreya@gmail.com}\\
+   \href{https://www.linkedin.com/in/venu-dattathreya-vemuru-a5020b225}{LinkedIn} \hspace{1em} \href{https://github.com/venu284}{GitHub} & Mobile: +1-(706)-380-2548 \\
+\end{tabular*}
+
+%----------PROFESSIONAL SUMMARY------------
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Computer Science graduate student with research experience in machine learning, computer vision, and data analytics. Skilled in developing AI solutions for agricultural and genomic applications with expertise in Python, Java, and ML frameworks. Seeking opportunities in machine learning engineering and AI research.
+    }}
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Georgia}{Athens, GA}
+      {Master of Science in Computer Science;  GPA: 3.76}{Aug. 2024 -- Present}
+    \resumeSubheading
+      {RMK Engineering College}{Chennai, TN}
+      {Bachelors of Technology in Computer Science and Business Systems; GPA: 3.7}{Aug. 2020 -- May 2024}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, SQL, JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, REST APIs, TensorFlow, PyTorch, Scikit-Learn} \\
+     \textbf{Developer Tools}{: Git, Docker, Jupyter} \\
+     \textbf{Machine Learning}{: Neural Networks, Convolutional Neural Networks (CNN), Long Short-Term Memory (LSTM), Natural Language Processing (NLP), Computer Vision}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graduate Research Assistant — Genomic Prediction of Soybean Yield}{May 2025 -- Present}
+      {University of Georgia}{Athens, GA}
+      \resumeItemListStart
+        \resumeItem{Engineered a dimension reduction pipeline for high-dimensional DNA sequence data (4000 features $\times$1000 samples), implementing Gaussian Process models that preserved biological significance while reducing computational complexity by over 90\%}
+        \resumeItem{Developed data preprocessing algorithms for genetic sequences, handling missing values and implementing normalization techniques to ensure optimal model performance across multiple machine learning approaches}
+        \resumeItem{Implemented and optimized multiple dimensionality reduction techniques (PCA, t-SNE, UMAP) with hyperparameter tuning, conducting comparative analysis to identify the most effective method for DNA sequence analysis}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Graduate Research Assistant — Automated Maize Brace-Root Phenotyping}{May 2025 -- Present}
+      {University of Georgia}{Athens, GA}
+      \resumeItemListStart
+        \resumeItem{Designed computer vision system for automated agricultural phenotyping, improving maize root segmentation accuracy from 47\% to 71\% through systematic evaluation and optimization of neural network architectures (U-Net, ResNet50-UNet, VGG16)}
+        \resumeItem{Established comprehensive deep learning pipeline including transfer learning, two-stage fine-tuning and advanced data augmentation techniques to extract biological traits from plant images}
+        \resumeItem{Constructed robust data processing solution that resolved complex JSON annotation formats, coordinate transformation errors, and data integrity challenges, establishing reliable foundation for model training and evaluation}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Student Face Recognition} - \emph{Python, Flask, REST API, OpenCV, SQL}}{January 2025}
+          \resumeItemListStart
+            \resumeItem{Designed a facial recognition system that processes real-time video streams, extracts face encodings, and matches identities with 95\%+ accuracy using OpenCV and face\_recognition libraries}
+            \resumeItem{Built a responsive Flask web application integrating computer vision algorithms with a SQLAlchemy database backend for seamless student identification and data management}
+            \resumeItem{Deployed secure image processing pipeline with validation protocols, error handling, and efficient data storage that reduced identification time by 40\% compared to manual verification methods}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Image Caption Generator} - \emph{TensorFlow, VGG16, NLP, Python}}{December 2024}
+          \resumeItemListStart
+            \resumeItem{Created image-captioning model combining CNN and LSTM with attention, achieving BLEU-1 score of 0.65.}
+            \resumeItem{Preprocessed 8K image-text pairs using custom tokenizers and padded data pipelines, reducing training time by 30\%.}
+            \resumeItem{Applied transfer learning and aligned visual-textual embeddings with BLEU evaluation.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------Publications-----------
+\section{Publications}
+    \resumeSubHeadingListStart
+      \resumePublicationsHeading
+          {\textbf{IEEE ICRMKM-AI}}{January 2024}
+          \resumeItemListStart
+            \resumeItem{Vemuru, V.D., et al. "Enhancing Image Deblurring Algorithm Selection and Performance Evaluation for CCTV"}
+            \resumeItem{Vemuru, V.D., et al. "Securing Children Based on IoT and Emotion Prediction"}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\end{document}
