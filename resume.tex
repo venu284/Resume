@@ -55,7 +55,7 @@
 %-------------------------
 % Custom commands - tighter spacing
 \newcommand{\resumeItem}[1]{
-  \item{
+  \item\small{
     {#1 \vspace{-3pt}}
   }
 }
@@ -64,28 +64,28 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{#3} & \textit{#4} \\
+      \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{#1} & \textit{#2} \\
+      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      #1 & #2 \\
+      \small#1 & #2 \\
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumePublicationsHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      #1 & #2 \\
+      \small#1 & #2 \\
     \end{tabular*}\vspace{-6pt}
 }
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -111,9 +111,9 @@
 %----------PROFESSIONAL SUMMARY------------
 \section{Professional Summary}
 \begin{itemize}[leftmargin=0.15in, label={}]
-    \item{
+    \small{\item{
      Computer Science graduate student with specialized research experience in machine learning, computer vision, and large-scale data processing. Proven track record developing scalable AI solutions for agricultural and genomic applications with focus on system architecture optimization and algorithm efficiency. Seeking software engineering opportunities to apply ML expertise and algorithmic problem-solving skills at leading technology companies.
-    }
+    }}
 \end{itemize}
 
 %-----------EDUCATION-----------
@@ -121,22 +121,22 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Georgia}{Athens, GA}
-      {Master of Science in Computer Science - GPA: 3.76}{August 2024 - Expected Graduation: May 2026}
+      {Master of Science in Computer Science;  GPA: 3.76}{Aug 2024 - May 2026 (Expected)}
     \resumeSubheading
       {RMK Engineering College}{Chennai, TN}
-      {Bachelor of Technology in Computer Science and Business Systems - GPA: 3.7}{August 2020 - Graduated: May 2024}
+      {Bachelors of Technology in Computer Science and Business Systems; GPA: 3.7}{Aug 2020 - May 2024}
   \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \item{
-     \textbf{Languages:} Python, Java, JavaScript, TypeScript, SQL, C++, R \\
-     \textbf{ML/AI:} TensorFlow, PyTorch, Scikit-Learn, Keras, Transformers, Computer Vision, NLP \\
-     \textbf{Data Engineering:} NumPy, Pandas, PySpark, Hadoop, Data Pipelines \\
-     \textbf{Cloud \& DevOps:} AWS (S3, EC2, Lambda), Docker, CI/CD, Kubernetes \\
-     \textbf{Web \& Mobile:} React, Node.js, RESTful APIs, Flask, Microservices Architecture
-    }
+    \small{\item{
+     \textbf{Languages}{: Python, Java, JavaScript, TypeScript, SQL, R} \\
+     \textbf{ML/AI}{: TensorFlow, PyTorch, Scikit-Learn, Keras, Transformers, Computer Vision, NLP} \\
+     \textbf{Data Engineering}{: NumPy, Pandas, Data Pipelines} \\
+     \textbf{Cloud \& DevOps}{: Docker, CI/CD, Kubernetes} \\
+     \textbf{Web \& Mobile}{: React, Node.js, RESTful APIs, Flask, Microservices Architecture}
+    }}
  \end{itemize}
 
 %-----------EXPERIENCE-----------
@@ -156,7 +156,7 @@
       {University of Georgia}{Athens, GA}
       \resumeItemListStart
         \resumeItem{Designed high-throughput computer vision system using PyTorch and OpenCV for automated agricultural phenotyping, improving maize root segmentation accuracy from 47\% to 71\% through systematic evaluation and optimization of U-Net architecture variants.}
-        \resumeItem{Established comprehensive deep learning pipeline with AWS integration, including transfer learning, two-stage fine-tuning and advanced data augmentation techniques that reduced analysis time by 35\% compared to manual methods.}
+        \resumeItem{Established comprehensive deep learning pipeline including transfer learning, two-stage fine-tuning and advanced data augmentation techniques that reduced analysis time by 35\% compared to manual methods.}
         \resumeItem{Architected robust data processing solution with Python that resolved complex JSON annotation formats, coordinate transformation errors, and data integrity challenges, establishing reliable foundation for distributed machine learning model training.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -165,14 +165,14 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Student Face Recognition System} - \emph{Python, Flask, React, Docker, AWS}}{January 2025}
+          {\textbf{Student Face Recognition System} - \emph{Python, Flask, React, Docker}}{Jan 2025}
           \resumeItemListStart
             \resumeItem{Designed a distributed facial recognition system that processes real-time video streams, extracts face encodings, and matches identities with 95\%+ accuracy using OpenCV and face\_recognition libraries.}
             \resumeItem{Built a microservices architecture with React frontend and Flask backend, deploying RESTful APIs that integrated computer vision algorithms with SQLAlchemy database for scalable student identification.}
-            \resumeItem{Containerized application components with Docker and deployed on AWS EC2, implementing secure image processing pipeline with validation protocols and efficient data storage that reduced identification time by 40\%.}
+            \resumeItem{Containerized application components with Docker, implementing secure image processing pipeline with validation protocols and efficient data storage that reduced identification time by 40\%.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Image Caption Generator} - \emph{TensorFlow, VGG16, NLP, Python, GCP}}{December 2024}
+          {\textbf{Image Caption Generator} - \emph{TensorFlow, VGG16, NLP, Python, GCP}}{Dec 2024}
           \resumeItemListStart
             \resumeItem{Created an AI image captioning system using TensorFlow, integrating VGG16 CNN for feature extraction and LSTM networks for text generation, achieving a BLEU-1 score of 0.64 on the Flickr8k dataset.}
             \resumeItem{Architected an end-to-end deep learning pipeline combining computer vision and NLP techniques, processing 8,000+ images and extracting 4096-dimensional feature vectors using optimized parallel processing.}
@@ -184,7 +184,7 @@
 \section{Publications}
     \resumeSubHeadingListStart
       \resumePublicationsHeading
-          {\textbf{IEEE ICRMKM-AI}}{January 2024}
+          {\textbf{IEEE ICRMKM-AI}}{Jan 2024}
           \resumeItemListStart
             \resumeItem{Vemuru, V.D., et al. "Enhancing Image Deblurring Algorithm Selection and Performance Evaluation for CCTV"}
             \resumeItem{Vemuru, V.D., et al. "Securing Children Based on IoT and Emotion Prediction"}
