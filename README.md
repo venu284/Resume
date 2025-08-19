@@ -4,7 +4,7 @@ This repository contains my professional resume created with LaTeX.
 
 ## Current Resume
 
-![Resume](resume.pdf)
+![Resume](resume.png)
 
 ## How to Use
 
