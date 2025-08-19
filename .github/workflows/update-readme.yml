@@ -24,7 +24,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y poppler-utils imagemagick ghostscript
           sudo sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
-          convert -density 300 resume.pdf -quality 100 resume.png
+          # Added background white color to the PNG conversion
+          convert -density 300 resume.pdf -background white -alpha remove -alpha off -quality 100 resume.png
           
       - name: Update README
         run: |
@@ -35,7 +36,7 @@ jobs:
 
           ## Current Resume
 
-          ![Resume](resume.pdf)
+          ![Resume](resume.png)
 
           ## How to Use
 
