@@ -1,0 +1,55 @@
+name: Update Resume in README
+
+on:
+  push:
+    paths:
+      - 'resume.tex'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
+      - name: Setup LaTeX
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: resume.tex
+          
+      - name: Convert PDF to PNG
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils imagemagick ghostscript
+          sudo sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
+          convert -density 300 resume.pdf -quality 100 resume.png
+          
+      - name: Update README
+        run: |
+          cat > README.md << 'EOL'
+          # Venu Dattathreya Vemuru - Resume
+
+          This repository contains my professional resume created with LaTeX.
+
+          ## Current Resume
+
+          ![Resume](resume.png)
+
+          ## How to Use
+
+          1. Clone this repository
+          2. Edit `resume.tex` file
+          3. Compile with LaTeX or use Overleaf
+
+          *Last updated: $(date '+%Y-%m-%d %H:%M:%S')*
+          EOL
+          
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md resume.pdf resume.png
+          git commit -m "Update README with latest resume" || echo "No changes to commit"
+          git push
