@@ -68,13 +68,6 @@
     \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -89,6 +82,8 @@
     \end{tabular*}\vspace{-6pt}
 }
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -109,41 +104,21 @@
 \end{tabular*}
 
 %----------PROFESSIONAL SUMMARY------------
-\section{Professional Summary}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    {\item{
-     Computer Science graduate student with specialized research experience in machine learning, computer vision, and large-scale data processing. Proven track record developing scalable AI solutions for agricultural and genomic applications with focus on system architecture optimization and algorithm efficiency. Seeking software engineering opportunities to apply ML expertise and algorithmic problem-solving skills at leading technology companies.
-    }}
-\end{itemize}
+%\section{Professional Summary}
+%\begin{itemize}[leftmargin=0.15in, label={}]
+  %  {\item{
+   %  Computer Science graduate student experience in predictive modeling, machine learning algorithms, and large-scale data processing. Developing scalable ML solutions with experience in computer vision and statistical analysis. Passionate about implementing efficient algorithms for complex data challenges and collaborating across teams to deliver innovative solutions. Seeking a Machine Learning internship at Adobe to apply technical expertise in developing predictive models and optimization techniques for customer experience enhancement.
+ %   }}
+%\end{itemize}
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Georgia}{Athens, GA}
-      {Master of Science in Computer Science - GPA: 3.76}{Aug 2024 - May 2026 (Expected)}
-    \resumeSubheading
-      {RMK Engineering College}{Chennai, India}
-      {Bachelor of Technology in Computer Science and Business Systems - GPA: 3.7}{Aug 2020 - May 2024}
-  \resumeSubHeadingListEnd
 
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \item{
-     \textbf{Languages:} Python, Java, JavaScript, SQL, R \\
-     \textbf{ML/AI:} TensorFlow, PyTorch, Scikit-Learn, Keras, Computer Vision, NLP \\
-     \textbf{Data Engineering:} NumPy, Pandas, Data Pipelines \\
-     \textbf{DevOps:} Docker, CI/CD, Kubernetes \\
-     %\textbf{Security:} Penetration Testing, Nmap, Burp Suite, Metasploit
-    }
- \end{itemize}
+
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Graduate Research Assistant — Genomic Prediction of Soybean Yield}{May 2025 - Present}
+      {Graduate Research Assistant — Genomic Prediction of Soybean Yield}{Jan 2025 - Present}
       {University of Georgia}{Athens, GA}
       \resumeItemListStart
         \resumeItem{Engineered a scalable dimension reduction pipeline for high-dimensional DNA sequence data, implementing Gaussian Process models with distributed computing that improved prediction accuracy by 23\%.}
@@ -152,7 +127,7 @@
       \resumeItemListEnd
       
     \resumeSubheading
-      {Graduate Research Assistant — Automated Maize Brace-Root Phenotyping}{May 2025 - Present}
+      {Graduate Research Assistant — Automated Maize Brace-Root Phenotyping}{Jan 2025 - Present}
       {University of Georgia}{Athens, GA}
       \resumeItemListStart
         \resumeItem{Designed computer vision system using PyTorch and OpenCV for agricultural phenotyping, improving maize root segmentation accuracy from 47\% to 71\% through optimization of U-Net architecture.}
@@ -182,7 +157,7 @@
           {\textbf{E-Cinema Booking System} - \emph{React, Node.js, Express, MongoDB, JWT}}{Feb 2025}
           \resumeItemListStart
             \resumeItem{Architected a comprehensive full-stack web application providing interactive digital experiences for movie browsing and booking, implementing modern UI design patterns and responsive layouts that enhanced user engagement.}
-            \resumeItem{Engineered dynamic seat selection interface with client-side rendering optimizations and state management using Redux, reducing load times by 40\% while maintaining a seamless, visually compelling user experience.}
+            \resumeItem{Engineered dynamic seat selection interface with client-side rendering optimizations, reducing load times by 40\% while maintaining a seamless, visually compelling user experience.}
             \resumeItem{Developed modular, reusable frontend components and backend microservices with thorough test coverage, ensuring 99.9\% uptime and 1000+ concurrent users support through clean, maintainable code and efficient algorithms.}
           \resumeItemListEnd
           
@@ -195,14 +170,42 @@
           \resumeItemListEnd
            
     \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+     \textbf{Languages:} Python, Java, JavaScript, SQL \\
+     \textbf{ML/AI:} TensorFlow, PyTorch, Scikit-Learn, Keras, NLP \\
+     \textbf{Data Engineering:} NumPy, Pandas \\
+     \textbf{DevOps:} Docker, CI/CD, Kubernetes \\
+     %\textbf{Security:} Penetration Testing, Nmap, Burp Suite, Metasploit
+    }
+ \end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Georgia}{Athens, GA}
+      {Master of Science in Computer Science}{Aug 2024 - May 2026 (Expected)}
+    \resumeSubheading
+      {RMK Engineering College}{Chennai, India}
+      {Bachelor of Science in Computer Science}{Aug 2020 - May 2024}
+  \resumeSubHeadingListEnd
+
 %-----------Publications-----------
 \section{Publications}
     \resumeSubHeadingListStart
       \resumePublicationsHeading
           {\textbf{IEEE ICRMKM-AI}}{Jan 2024}
           \resumeItemListStart
-            \resumeItem{Vemuru, V.D., et al. "Enhancing Image Deblurring Algorithm Selection and Performance Evaluation for CCTV"}
-            \resumeItem{Vemuru, V.D., et al. "Securing Children Based on IoT and Emotion Prediction"}
+            \resumeItem{Vemuru, V.D., et al. \href{https://ieeexplore.ieee.org/document/10369555}{Enhancing Image Deblurring Algorithm Selection and Performance Evaluation for CCTV}.}
+            \resumeItem{Vemuru, V.D., et al. \href{https://ieeexplore.ieee.org/document/10369553}{Securing Children Based on IoT and Emotion Prediction}.}
+            \resumeItem{Vemuru, V.D., et al. \href{https://ieeexplore.ieee.org/document/10368901}{AI-Powered Visual Aid System for the Blind}.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
+
 \end{document}
