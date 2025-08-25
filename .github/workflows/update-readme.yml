@@ -9,8 +9,6 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
@@ -26,39 +24,27 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y poppler-utils imagemagick ghostscript
           sudo sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
+          # Added background white color to the PNG conversion
           convert -density 300 resume.pdf -background white -alpha remove -alpha off -quality 100 resume.png
           
       - name: Update README
         run: |
           cat > README.md << 'EOL'
           # Venu Dattathreya Vemuru - Resume
-
           This repository contains my professional resume created with LaTeX.
-
           ## Current Resume
-
           ![Resume](resume.png)
-
           ## How to Use
-
           1. Clone this repository
           2. Edit `resume.tex` file
           3. Compile with LaTeX or use Overleaf
-
-          *Last updated: $(date '+%Y-%m-%d %H:%M:%S')*
+          
           EOL
           
       - name: Commit and push
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          # Pull the latest changes with rebase to avoid merge commits
-          git pull --rebase
-          
-          # Add the changes and commit
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add README.md resume.pdf resume.png
           git commit -m "Update README with latest resume" || echo "No changes to commit"
-          
-          # Push with force-with-lease for safety
-          git push --force-with-lease
+          git push
