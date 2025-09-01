@@ -34,7 +34,7 @@ jobs:
           # Venu Dattathreya Vemuru - Resume
           This repository contains my professional resume created with LaTeX.
           ## Current Resume
-          ![Resume](resume.png)
+          ![Resume](resume.pdf)
           ## How to Use
           1. Clone this repository
           2. Edit `resume.tex` file
