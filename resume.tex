@@ -5,8 +5,6 @@
 % License : MIT
 %------------------------
 
-
-
 \documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
@@ -36,8 +34,8 @@
 % Adjust margins for one-page fit
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.6in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -58,22 +56,23 @@
 % Custom commands - tighter spacing
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-3pt}}
+    {#1 \vspace{-5pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-1.5pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
+% Modified project heading with GitHub link before date
+\newcommand{\resumeProjectHeading}[4]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small\textbf{#1} - \small\emph{#2} & \small\href{#4}{[GitHub]} \hspace{0.5em} #3 \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -129,16 +128,16 @@
       \resumeItemListEnd
       
     \resumeSubheading
-      {Graduate Research Assistant — Automated Maize Brace-Root Phenotyping}{Jan 2025 - Present}
+      {Graduate Research Assistant — Automated Maize Brace-Root Phenotyping} {May 2025 - Present}
       {University of Georgia}{Athens, GA}
       \resumeItemListStart
         \resumeItem{Designed computer vision system using PyTorch and OpenCV for agricultural phenotyping, improving maize root segmentation accuracy from 47\% to 71\% through optimization of U-Net architecture.}
         \resumeItem{Established deep learning pipeline including transfer learning and data augmentation techniques that reduced analysis time by 35\% compared to manual methods.}
-        \resumeItem{Architected data processing solution with Python that resolved complex JSON annotation formats and data integrity challenges for distributed machine learning model training.}
+        \resumeItem{Architected data processing solution with Python that resolved complex JSON annotation formats and data integrity challenges for distributed model training.}
       \resumeItemListEnd
       
     \resumeSubheading
-      {Cybersecurity Intern}{Feb 2023 - Mar 2023}
+      {Cybersecurity Intern}{Feb 2023 - May 2023}
       {Corizo}{Bengaluru, India (Remote)}
       \resumeItemListStart
         \resumeItem{Identified 50+ vulnerabilities using Nmap, Burp Suite and Metasploit; implemented patches improving security by 25\% and developed automation reducing manual effort by 40\%.}
@@ -148,49 +147,51 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+
     \resumeProjectHeading
-          {\textbf{\href{https://github.com/venu284/e-cinema-booking.git}{E-Cinema Booking System}} - \emph{React, Node.js, Express, MongoDB, JWT}}{Feb 2025}
+          {Sky Hop} {React, Java, Spring Boot, MySQL, JWT, JPA/Hibernate}{Mar 2025}{https://github.com/venu284/Flight-Booking.git}
           \resumeItemListStart
-            \resumeItem{Engineered responsive web application with React components and CSS3 flexbox/grid, ensuring seamless user experience across mobile, tablet, and desktop devices while maintaining WCAG accessibility standards.}
-            \resumeItem{Implemented modern UI/UX design patterns with JavaScript and React hooks for dynamic seat selection interface, reducing page load times by 40\% through efficient DOM manipulation and code splitting.}
-            \resumeItem{Developed RESTful API endpoints with Node.js and Express to handle user authentication, ticket reservations, and payment processing, ensuring secure data transmission and cross-browser compatibility.}
+            \resumeItem{Engineered a complete booking system with REST endpoints for authentication, flight search, reservations, and ticket management using a layered architecture pattern for improved maintainability.}
+            \resumeItem{Designed a normalized relational database schema with six interconnected entities (Airplane, Airport, Flight, Passenger, Ticket, Reservation) implementing transaction-safe services that maintained data integrity throughout booking flows.}
+            \resumeItem{Implemented comprehensive security measures including stateless JWT authentication, centralized exception handling, and request validation..}
+          \resumeItemListEnd
+
+    
+      \resumeProjectHeading
+          {Cinema Booking System}{Next.js, React, Node.js, MongoDB/Mongoose, Tailwind CSS}{Feb 2025}{https://github.com/venu284/e-cinema-booking.git}
+          \resumeItemListStart
+            \resumeItem{Architected comprehensive end-to-end flows for movie discovery, showtime scheduling, seat selection, and secure payments with tokenized cards, reducing checkout abandonment by 35\%.}
+            \resumeItem{Implemented 9+ Mongoose domain models with custom validation and atomic reservation logic that eliminated 90\% of seat overbooking conflicts while supporting dynamic pricing scenarios.}
+            \resumeItem{Optimized performance with SSR/SSG strategies achieving 25\% faster initial page loads and reduced code duplication by 40\% through centralized business logic in API routes.}
           \resumeItemListEnd
           
-
-    \resumeProjectHeading
-          {\textbf{\href{https://github.com/venu284/Flight-Booking.git}{Sky Hop}} - \emph{Java, Spring Boot, JPA/Hibernate, MySQL, JWT}}{Aug 2025}
+      \resumeProjectHeading
+          {Student Identification Management}{Python, Flask, OpenCV}{Jan 2025}{https://github.com/venu284/Student-Identification-Management.git}
           \resumeItemListStart
-            \resumeItem{Architected and implemented a Java Spring Boot flight reservation system with REST APIs and MVC design pattern, achieving 99\% system availability while handling concurrent user requests through efficient thread management.}
-            \resumeItem{Engineered secure user authentication using Spring Security and JWT integration, implementing role-based access control that reduced unauthorized access attempts by 30\% while maintaining API response times under 200ms.}
-            \resumeItem{Designed scalable data persistence layer with JPA/Hibernate and MySQL, optimizing complex flight search queries that improved system performance by 35\% through strategic database indexing and query optimization.}
+            \resumeItem{Developed a distributed facial recognition system that processes real-time video streams, extracts face encodings, and matches
+identities with 95\% accuracy using OpenCV and face recognition libraries.}
+            \resumeItem{Built scalable microservices architecture with RESTful APIs connecting frontend experience to backend processing, implementing efficient data flow patterns and responsive feedback mechanisms.}
+            \resumeItem{Designed a SQLite data model with server-side pagination and implemented efficient lifecycle management for resources (camera, file deletion, face embedding cache), reducing query loads by up to 90\% and ensuring reliable runtime with zero orphaned camera locks.}
           \resumeItemListEnd
 
-           \resumeProjectHeading
-          {\textbf{\href{https://github.com/venu284/Student-Identification-Management.git}{Student Face Recognition System}} - \emph{Python, Flask, React, OpenCV}}{Jan 2025}
-          \resumeItemListStart
-             \resumeItem{Designed responsive web interface with React components and CSS3, creating intuitive navigation and dashboard elements that visualize complex data through interactive charts and clean typography.}
-      \resumeItem{Built RESTful API architecture connecting React frontend to Python backend services, implementing efficient state management and asynchronous data fetching with Axios.}
-      \resumeItem{Created comprehensive testing suite with Jest and React Testing Library for frontend components, ensuring cross-browser compatibility and responsive design functionality across all device sizes.}
-          \resumeItemListEnd
-           
-
-\resumeProjectHeading
-          {\textbf{\href{https://github.com/venu284/Image-Caption-Generator-using-CNN-and-NLP.git}{Image Caption Generator}} - \emph{TensorFlow, VGG16, LSTM, Python}}{Dec 2024}
+          \resumeProjectHeading
+          {Image Caption Generator}{TensorFlow, VGG16, LSTM, Python}{Dec 2024}{https://github.com/venu284/Image-Caption-Generator-using-CNN-and-NLP.git}
           \resumeItemListStart
             \resumeItem{Created image captioning system combining VGG16 CNN for feature extraction and LSTM networks, achieving BLEU-1 score of 0.64; processed 8,000+ images extracting 4096-dimensional vectors.}
             \resumeItem{Developed custom data generator with Keras/TensorFlow, implementing checkpoint-based training reducing model loss from 6.36 to 3.96 with 8,700+ word vocabulary.}
-          \resumeItemListEnd
+         \resumeItemListEnd 
+           
     \resumeSubHeadingListEnd
+
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \item{
-     \textbf{Languages:} Python, Java, JavaScript, SQL \\
-     \textbf{ML/AI:} TensorFlow, PyTorch, Scikit-Learn, Keras, NLP \\
-     \textbf{Data Engineering:} NumPy, Pandas \\
-     \textbf{DevOps:} Docker, CI/CD, Kubernetes \\
-     %\textbf{Security:} Penetration Testing, Nmap, Burp Suite, Metasploit
+     \textbf{Languages:} Java, JavaScript, Python, SQL \\
+     \textbf{Web Development:} React, Node.js, Spring Boot, RESTful APIs \\
+     \textbf{DevOps \& Tools:} Docker, CI/CD, Git, Kubernetes, MongoDB \\
+     \textbf{Data \& ML:} NumPy, Pandas, TensorFlow, PyTorch, Scikit-learn, Matplotlib \\
     }
  \end{itemize}
 
@@ -207,15 +208,18 @@
   \resumeSubHeadingListEnd
 
 %-----------Publications-----------
-\section{Publications}
-    \resumeSubHeadingListStart
-      \resumePublicationsHeading
-          {\textbf{IEEE ICRMKM-AI}}{Jan 2024}
-          \resumeItemListStart
-            \resumeItem{Vemuru, V.D., et al. \href{https://ieeexplore.ieee.org/document/10369555}{Enhancing Image Deblurring Algorithm Selection and Performance Evaluation for CCTV}.}
-            \resumeItem{Vemuru, V.D., et al. \href{https://ieeexplore.ieee.org/document/10369553}{Securing Children Based on IoT and Emotion Prediction}.}
-            \resumeItem{Vemuru, V.D., et al. \href{https://ieeexplore.ieee.org/document/10368901}{AI-Powered Visual Aid System for the Blind}.}
-          \resumeItemListEnd
+%\section{Publications}
+   % \resumeSubHeadingListStart
+    %  \resumePublicationsHeading
+     %     {\textbf{IEEE ICRMKM-AI}}{Jan 2024}
+      %    \resumeItemListStart
+      %      \resumeItem{Vemuru, V.D., et al. \href{https://ieeexplore.ieee.org/document/10369555}{Enhancing Image Deblurring Algorithm Selection and Performance Evaluation for CCTV}.}
+      %      \resumeItem{Vemuru, V.D., et al. \href{https://ieeexplore.ieee.org/document/10369553}{Securing Children Based on IoT and Emotion Prediction}.}
+       %     \resumeItem{Vemuru, V.D., et al. \href{https://ieeexplore.ieee.org/document/10368901}{AI-Powered Visual Aid System for the Blind}.}
+       %   \resumeItemListEnd
+  %  \resumeSubHeadingListEnd
+
+\end{document}
     \resumeSubHeadingListEnd
 
 \end{document}
