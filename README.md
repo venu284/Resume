@@ -1,4 +1,4 @@
-# Venu Dattathreya Vemuru - Resume
+# Resume
 This repository contains my professional resume created with LaTeX.
 ## Current Resume
 ![Resume](resume.png)
