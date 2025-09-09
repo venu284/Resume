@@ -35,8 +35,10 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-0.6in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.5in}
+
+
 
 \urlstyle{same}
 
@@ -56,12 +58,12 @@
 % Custom commands - tighter spacing
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-5pt}}
+    {#1 \vspace{-3pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1.5pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -105,12 +107,14 @@
 \end{tabular*}
 
 %----------PROFESSIONAL SUMMARY------------
-%\section{Professional Summary}
-%\begin{itemize}[leftmargin=0.15in, label={}]
-  %  {\item{
-   %  Computer Science graduate student experience in predictive modeling, machine learning algorithms, and large-scale data processing. Developing scalable ML solutions with experience in computer vision and statistical analysis. Passionate about implementing efficient algorithms for complex data challenges and collaborating across teams to deliver innovative solutions. Seeking a Machine Learning internship at Adobe to apply technical expertise in developing predictive models and optimization techniques for customer experience enhancement.
- %   }}
-%\end{itemize}
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+
+    Computer Science graduate student with hands-on experience in GenAI applications, machine learning, and systems engineering. Proficient in prompt engineering and developing automated workflows that leverage AI capabilities across diverse domains. Skilled in Python-based data processing pipelines and optimizing large-scale systems. Eager to apply GenAI expertise to automate and enhance Systems Engineering workflows at Waymo.
+ 
+   }}
+\end{itemize}
 
 
 
@@ -122,25 +126,27 @@
       {Graduate Research Assistant — Genomic Prediction of Soybean Yield}{Jan 2025 - Present}
       {University of Georgia}{Athens, GA}
       \resumeItemListStart
-        \resumeItem{Engineered a scalable dimension reduction pipeline for high-dimensional DNA sequence data, implementing Gaussian Process models with distributed computing that improved prediction accuracy by 23\%.}
-        \resumeItem{Developed optimized Python data preprocessing algorithms for genetic sequences, implementing NumPy vectorization that reduced processing time by 65\% while ensuring cross-dataset model performance.}
-        \resumeItem{Implemented multiple dimensionality reduction techniques (PCA, t-SNE, UMAP) with scikit-learn hyperparameter tuning to identify the most efficient approach for genomic data visualization.}
+        \resumeItem {Engineered a pipeline using Python, PyTorch, and scikit-learn that improved genomic prediction accuracy by {84\%}, implemented dimensionality reduction techniques (Like, PCA and autoencoders) to transform over 10,000+ features into optimal subsets.}
+  
+  \resumeItem {Developed software architecture using custom PyTorch neural networks to process genomic data, created chromosome-specific autoencoders that achieved a 32-dimensional latent space representation, improving top and bottom quartile hit rates by {30-73\%}.}
+  
+  \resumeItem{Built a data processing system integrating Python and R to leverage specialized genomic packages, Orchestrated the evaluation of machine learning models (Like, Random Forest, and SVM) using GridSearchCV for hyperparameter optimization, reducing training time by {60\%} with GPU acceleration.}
       \resumeItemListEnd
       
     \resumeSubheading
       {Graduate Research Assistant — Automated Maize Brace-Root Phenotyping} {May 2025 - Present}
       {University of Georgia}{Athens, GA}
       \resumeItemListStart
-        \resumeItem{Designed computer vision system using PyTorch and OpenCV for agricultural phenotyping, improving maize root segmentation accuracy from 47\% to 71\% through optimization of U-Net architecture.}
-        \resumeItem{Established deep learning pipeline including transfer learning and data augmentation techniques that reduced analysis time by 35\% compared to manual methods.}
-        \resumeItem{Architected data processing solution with Python that resolved complex JSON annotation formats and data integrity challenges for distributed model training.}
+        \resumeItem{Led a solo research project to automate maize brace-root phenotyping; defined scope and success metrics to replace manual measures.}
+        \resumeItem{Built the workflow: assembled \textasciitilde3.8k field images, curated 235 pixel-labeled masks into \textasciitilde4.2k tiles, standardized preprocessing, tracked experiments, and added scale-aware trait extraction with OpenCV.}
+        \resumeItem{Implemented and benchmarked 8 CNN variants in TensorFlow/Keras (U-Net, Attention U-Net, U-Net 3+, ResNet50-U-Net baselines); selected U-Net 3+ achieving 71.3\% validation Dice and $R^2 = 0.86$ for stalk-width vs.\ manual, outperforming alternatives by 12--46 Dice points.}
       \resumeItemListEnd
       
     \resumeSubheading
       {Cybersecurity Intern}{Feb 2023 - May 2023}
       {Corizo}{Bengaluru, India (Remote)}
       \resumeItemListStart
-        \resumeItem{Identified 50+ vulnerabilities using Nmap, Burp Suite and Metasploit; implemented patches improving security by 25\% and developed automation reducing manual effort by 40\%.}
+        \resumeItem{Identified 50+ vulnerabilities; implemented patches improving system reliability by 25\% and developed automation scripts reducing manual effort by 40\%.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -149,64 +155,76 @@
     \resumeSubHeadingListStart
 
     \resumeProjectHeading
+          {Image Caption Generator}{TensorFlow, VGG16, LSTM, Python}{Dec 2024}{https://github.com/venu284/Image-Caption-Generator-using-CNN-and-NLP.git}
+         \resumeItemListStart
+            \resumeItem{Created image captioning system combining VGG16 CNN for feature extraction and LSTM networks, achieving BLEU-1 score of 0.64; processed 8,000+ images extracting 4096-dimensional vectors.}
+            \resumeItem{Developed custom data generator with Keras/TensorFlow, implementing checkpoint-based training reducing model loss from 6.36 to 3.96 with 8,700+ word vocabulary.}
+         \resumeItemListEnd 
+
+    \resumeProjectHeading
           {Sky Hop} {React, Java, Spring Boot, MySQL, JWT, JPA/Hibernate}{Mar 2025}{https://github.com/venu284/Flight-Booking.git}
           \resumeItemListStart
-            \resumeItem{Engineered a complete booking system with REST endpoints for authentication, flight search, reservations, and ticket management using a layered architecture pattern for improved maintainability.}
-            \resumeItem{Designed a normalized relational database schema with six interconnected entities (Airplane, Airport, Flight, Passenger, Ticket, Reservation) implementing transaction-safe services that maintained data integrity throughout booking flows.}
-            \resumeItem{Implemented comprehensive security measures including stateless JWT authentication, centralized exception handling, and request validation..}
+            \resumeItem{Engineered a complete booking system with REST API's for authentication, flight search, reservations, and ticket management using a layered architecture pattern for improved maintainability.}
+            \resumeItem{Designed a normalized relational database schema with six interconnected entities implementing transaction-safe services that maintained data integrity throughout booking flows.}
+            \resumeItem{Implemented security measures including stateless JWT authentication, centralized exception handling, and request validation, ensuring system reliability and protecting sensitive payment information.}
           \resumeItemListEnd
 
     
       \resumeProjectHeading
           {Cinema Booking System}{Next.js, React, Node.js, MongoDB/Mongoose, Tailwind CSS}{Feb 2025}{https://github.com/venu284/e-cinema-booking.git}
           \resumeItemListStart
-            \resumeItem{Architected comprehensive end-to-end flows for movie discovery, showtime scheduling, seat selection, and secure payments with tokenized cards, reducing checkout abandonment by 35\%.}
+            \resumeItem{Architected end-to-end flows for movie discovery, showtime scheduling, seat selection, and secure payments with tokenized cards, reducing checkout abandonment by 35\%.}
             \resumeItem{Implemented 9+ Mongoose domain models with custom validation and atomic reservation logic that eliminated 90\% of seat overbooking conflicts while supporting dynamic pricing scenarios.}
             \resumeItem{Optimized performance with SSR/SSG strategies achieving 25\% faster initial page loads and reduced code duplication by 40\% through centralized business logic in API routes.}
           \resumeItemListEnd
           
-      \resumeProjectHeading
-          {Student Identification Management}{Python, Flask, OpenCV}{Jan 2025}{https://github.com/venu284/Student-Identification-Management.git}
-          \resumeItemListStart
-            \resumeItem{Developed a distributed facial recognition system that processes real-time video streams, extracts face encodings, and matches
-identities with 95\% accuracy using OpenCV and face recognition libraries.}
-            \resumeItem{Built scalable microservices architecture with RESTful APIs connecting frontend experience to backend processing, implementing efficient data flow patterns and responsive feedback mechanisms.}
-            \resumeItem{Designed a SQLite data model with server-side pagination and implemented efficient lifecycle management for resources (camera, file deletion, face embedding cache), reducing query loads by up to 90\% and ensuring reliable runtime with zero orphaned camera locks.}
-          \resumeItemListEnd
+      %\resumeProjectHeading
+          %{Student Identification Management}{Python, Flask, OpenCV}{Jan 2025}{https://github.com/venu284/Student-Identification-Management.git}
+         % \resumeItemListStart
+          %  \resumeItem{Developed a facial recognition system that processes real-time video streams, extracts face encodings, and matches identities with 95\% accuracy using OpenCV and face recognition libraries.}
+          %  \resumeItem{Built scalable microservices architecture with RESTful APIs connecting frontend experience to backend processing, implementing efficient data flow patterns.}
+          %  \resumeItem{Designed a SQLite data model with server-side pagination and implemented lifecycle management for resources and reduced query loads by up to 90\% and ensuring reliable runtime with zero orphaned camera locks.}
+         % \resumeItemListEnd
 
-          \resumeProjectHeading
-          {Image Caption Generator}{TensorFlow, VGG16, LSTM, Python}{Dec 2024}{https://github.com/venu284/Image-Caption-Generator-using-CNN-and-NLP.git}
-          \resumeItemListStart
-            \resumeItem{Created image captioning system combining VGG16 CNN for feature extraction and LSTM networks, achieving BLEU-1 score of 0.64; processed 8,000+ images extracting 4096-dimensional vectors.}
-            \resumeItem{Developed custom data generator with Keras/TensorFlow, implementing checkpoint-based training reducing model loss from 6.36 to 3.96 with 8,700+ word vocabulary.}
-         \resumeItemListEnd 
+          
            
     \resumeSubHeadingListEnd
 
 
 %-----------TECHNICAL SKILLS-----------
+
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \item{
-     \textbf{Languages:} Java, JavaScript, Python, SQL \\
-     \textbf{Web Development:} React, Node.js, Spring Boot, RESTful APIs \\
-     \textbf{DevOps \& Tools:} Docker, CI/CD, Git, Kubernetes, MongoDB \\
-     \textbf{Data \& ML:} NumPy, Pandas, TensorFlow, PyTorch, Scikit-learn, Matplotlib \\
+     \textbf{AI \& ML:} TensorFlow, PyTorch, Computer Vision, NLP, Prompt Engineering, ML Pipeline Design \\
+     \textbf{Systems \& Testing:} CI/CD Pipelines, System Integration, Test Automation, Workflow Orchestration \\
+     \textbf{Programming:} Python, SQL, Java, JavaScript \\
+     \textbf{DevOps \& Tools:} Docker, Git, Kubernetes, MongoDB \\
+     \textbf{Data Processing:} NumPy, Pandas, Data Transformation, Matplotlib, Scikit-learn \\
     }
  \end{itemize}
-
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Georgia}{Athens, GA}
-      {Master of Science in Computer Science}{Aug 2024 - May 2026 (Expected)}
-    \resumeSubheading
-      {RMK Engineering College}{Chennai, India}
-      {Bachelor of Science in Computer Science}{Aug 2020 - May 2024}
+      {Master of Science in Computer Science; GPA: 3.7}{Aug 2024 - Dec 2026 (Expected)}
+      \resumeItemListStart
+    \resumeItem{Coursework: Advanced Algorithms and Data Structures, Object-Oriented Programming, Database Management Systems}
+  \resumeItemListEnd
+   \resumeSubheading
+     {RMK Engineering College}{Chennai, India}
+      {Bachelor of Science in Computer Science; GPA: 3.74}{Aug 2020 - May 2024}
   \resumeSubHeadingListEnd
 
+
+%\section{Relevant Coursework}
+%\begin{itemize}[leftmargin=0.15in, label={}]
+   % \item{
+    % Algorithms \& Data Structures, Object-Oriented Programming, Database Systems, Operating Systems, Machine Learning, Software Engineering, Artificial Intelligence, Web Development, Big Data Analytics
+  %  }
+%\end{itemize}
 %-----------Publications-----------
 %\section{Publications}
    % \resumeSubHeadingListStart
@@ -218,8 +236,5 @@ identities with 95\% accuracy using OpenCV and face recognition libraries.}
        %     \resumeItem{Vemuru, V.D., et al. \href{https://ieeexplore.ieee.org/document/10368901}{AI-Powered Visual Aid System for the Blind}.}
        %   \resumeItemListEnd
   %  \resumeSubHeadingListEnd
-
-\end{document}
-    \resumeSubHeadingListEnd
 
 \end{document}
