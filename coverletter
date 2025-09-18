@@ -27,11 +27,6 @@
   bottom=0.6in
 }
 
-%----------FONT OPTIONS----------
-% sans-serif
-\usepackage{helvet}  % Arial/Helvetica equivalent
-\renewcommand{\familydefault}{\sfdefault}
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
