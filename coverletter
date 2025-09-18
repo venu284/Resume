@@ -11,7 +11,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks, bookmarks=false]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -26,6 +26,7 @@
   top=0.6in,
   bottom=0.6in
 }
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -57,10 +58,10 @@
 \vspace{0.75em}
 
 % Recipient
-ADP\\
+Adobe\\
 Human Resources Department\\
-Summer 2026 Data Science/Machine Learning Intern Position\\
-Roseland, NJ\\
+Machine Learning Engineer Position\\
+San Jose, CA\\
 
 \vspace{0.75em}
 
@@ -70,31 +71,26 @@ Dear Hiring Manager,
 
 \setstretch{1.1}
 
-I am writing to express my strong interest in the Summer 2026 Data Science/Machine Learning Intern position at ADP. As a Master of Science in Computer Science student at the University of Georgia with an expected graduation date of May 2026, I am excited about the opportunity to contribute to ADP's innovative data science initiatives while gaining valuable experience.
-
+I am writing to express my strong interest in the Machine Learning Engineer position at Adobe. As a Master of Science in Computer Science student at the University of Georgia, I am excited about the opportunity to contribute to Adobe's mission of changing the world through digital experiences while applying AI and machine learning techniques to solve challenging business problems.
 My academic background and hands-on research experience align exceptionally well with the qualifications outlined in your job posting:
-
 \begin{itemize}[leftmargin=0.2in, itemsep=0pt]
-  \item \textbf{Advanced Analytics \& Predictive Modeling:} As a Machine Learning Researcher, I architected an ML pipeline using Python, PyTorch, and scikit-learn that processed 1,512 genomic samples across a 10-year dataset, achieving an 84\% performance improvement. I have extensive experience in formulating problems, extracting and analyzing data from multiple systems, and developing compelling visual representations with actionable insights.
+  \item \textbf{Advanced Machine Learning \& Statistical Modeling:} As a Machine Learning Researcher, I architected an ML pipeline using Python, PyTorch, and scikit-learn that processed 1,512 genomic samples across a 10-year dataset, achieving an 84\% performance improvement. I have deep experience in dimensionality reduction techniques, implementing PCA and autoencoders to transform 10,000+ features into optimal subsets, which directly relates to Adobe's big-data challenges.
   
-  \item \textbf{Technical Proficiency:} I possess strong programming skills in Java, Python, and SQL, along with experience in database technologies including MySQL, PostgreSQL, and MongoDB. My technical toolkit includes distributed computing frameworks and machine learning libraries such as TensorFlow, scikit-learn, and Keras, which directly align with ADP's technology stack requirements.
+  \item \textbf{Technical Proficiency in Required Technologies:} I possess strong programming skills in Python, Java, and SQL, with extensive experience in machine learning libraries including scikit-learn, TensorFlow, and PyTorch. My database expertise spans MySQL, PostgreSQL, and MongoDB, providing the foundation needed for working with large-scale datasets and production systems at Adobe.
   
-  \item \textbf{Project Management \& Implementation:} In my current role as a Full Stack Developer at the SER-CAT Lab, I independently manage the development of a web application serving 19 member institutions and 500+ researchers. I successfully migrated 10,000 scientific records while collaborating with laboratory directors using Agile methodology to gather requirements and deliver prototypes.
+  \item \textbf{Scalable Algorithm Development:} In my current role as a Volunteer Computer Vision Researcher, I developed semantic segmentation models with 50M+ parameters using TensorFlow Keras, implementing 7+ deep learning architectures (UNet3+, ResNet50-UNet, Attention UNet) to achieve 71\% segmentation accuracy. I engineered ML pipelines with custom loss functions and data augmentation techniques that reduced manual processing time by 90\%.
   
-  \item \textbf{Computer Vision \& Deep Learning:} As a Volunteer Computer Vision Researcher, I developed automated systems implementing 7 deep learning architectures (UNet3+, ResNet50-UNet, Attention UNet) in TensorFlow, achieving 71\% segmentation accuracy. I engineered ML pipelines that reduced manual measurement time by 90\% through custom loss functions and data augmentation techniques.
+  \item \textbf{Cross-Functional Collaboration \& Research:} I have demonstrated strong collaboration skills working with postdoctoral researchers and faculty to build cross-platform ML systems integrating Python and R. I implemented GPU-accelerated workflows that reduced analysis time by 60\%, showcasing my ability to work effectively with diverse teams and optimize performance for production environments.
 \end{itemize}
 
- I'm particularly interested in leveraging my experience with predictive modeling and advanced analytics to help ADP create innovative products and services that drive business value for your clients.
+My passion for innovation and continuous learning aligns perfectly with Adobe's culture of creativity and technical excellence. I have demonstrated this through my ongoing research publications, including work on dimensionality reduction in genomic prediction and multiple IEEE conference publications on AI applications. I am confident that my technical skills, research mindset, and collaborative approach would make me a valuable addition to Adobe's machine learning team.
 
-My passion for continuous learning aligns perfectly with ADP's culture of growth and innovation. I have demonstrated this through my ongoing research projects, publications in preparation, and my ability to quickly adapt to new technologies and methodologies. I am confident that my technical skills, combined with my collaborative approach and problem-solving mindset, would make me a valuable addition to your data science team.
-
-Thank you for considering my application. I would welcome the opportunity to discuss how my skills, enthusiasm, and fresh perspective could contribute to ADP's continued success in transforming human capital management through data-driven insights.
+Thank you for considering my application. I would welcome the opportunity to discuss how my skills in statistical modeling, machine learning, and algorithm development could contribute to Adobe's continued leadership in transforming digital experiences through AI-powered solutions.
 
 \vspace{0.75em}
 
 Sincerely,
 
-\vspace{1em}
 
 Venu Dattathreya Vemuru
 
