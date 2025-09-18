@@ -1,0 +1,106 @@
+%-------------------------
+% Cover Letter in Latex
+% Author : Venu Dattathreya Vemuru
+% Based on resume template structure
+%------------------------
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{geometry}
+\input{glyphtounicode}
+
+% Set document margins
+\geometry{
+  left=0.75in,
+  right=0.75in,
+  top=0.6in,
+  bottom=0.6in
+}
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage{helvet}  % Arial/Helvetica equivalent
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\begin{document}
+
+%----------HEADING------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+   \textbf{\href{}}{\Large Venu Dattathreya Vemuru} & Email: \href{mailto:venudattathreya@gmail.com}{venudattathreya@gmail.com}\\
+   \href{https://www.linkedin.com/in/venu-dattathreya-vemuru-a5020b225}{LinkedIn} \hspace{1em} \href{https://github.com/venu284}{GitHub} & Mobile: +1-(706)-380-2548 \\
+\end{tabular*}
+
+\vspace{0.75em}
+
+% Date
+{\raggedleft \today \par}
+
+\vspace{0.75em}
+
+% Recipient
+ADP\\
+Human Resources Department\\
+Summer 2026 Data Science/Machine Learning Intern Position\\
+Roseland, NJ\\
+
+\vspace{0.75em}
+
+Dear Hiring Manager,
+
+\vspace{0.4em}
+
+\setstretch{1.1}
+
+I am writing to express my strong interest in the Summer 2026 Data Science/Machine Learning Intern position at ADP. As a Master of Science in Computer Science student at the University of Georgia with an expected graduation date of May 2026, I am excited about the opportunity to contribute to ADP's innovative data science initiatives while gaining valuable experience.
+
+My academic background and hands-on research experience align exceptionally well with the qualifications outlined in your job posting:
+
+\begin{itemize}[leftmargin=0.2in, itemsep=0pt]
+  \item \textbf{Advanced Analytics \& Predictive Modeling:} As a Machine Learning Researcher, I architected an ML pipeline using Python, PyTorch, and scikit-learn that processed 1,512 genomic samples across a 10-year dataset, achieving an 84\% performance improvement. I have extensive experience in formulating problems, extracting and analyzing data from multiple systems, and developing compelling visual representations with actionable insights.
+  
+  \item \textbf{Technical Proficiency:} I possess strong programming skills in Java, Python, and SQL, along with experience in database technologies including MySQL, PostgreSQL, and MongoDB. My technical toolkit includes distributed computing frameworks and machine learning libraries such as TensorFlow, scikit-learn, and Keras, which directly align with ADP's technology stack requirements.
+  
+  \item \textbf{Project Management \& Implementation:} In my current role as a Full Stack Developer at the SER-CAT Lab, I independently manage the development of a web application serving 19 member institutions and 500+ researchers. I successfully migrated 10,000 scientific records while collaborating with laboratory directors using Agile methodology to gather requirements and deliver prototypes.
+  
+  \item \textbf{Computer Vision \& Deep Learning:} As a Volunteer Computer Vision Researcher, I developed automated systems implementing 7 deep learning architectures (UNet3+, ResNet50-UNet, Attention UNet) in TensorFlow, achieving 71\% segmentation accuracy. I engineered ML pipelines that reduced manual measurement time by 90\% through custom loss functions and data augmentation techniques.
+\end{itemize}
+
+ I'm particularly interested in leveraging my experience with predictive modeling and advanced analytics to help ADP create innovative products and services that drive business value for your clients.
+
+My passion for continuous learning aligns perfectly with ADP's culture of growth and innovation. I have demonstrated this through my ongoing research projects, publications in preparation, and my ability to quickly adapt to new technologies and methodologies. I am confident that my technical skills, combined with my collaborative approach and problem-solving mindset, would make me a valuable addition to your data science team.
+
+Thank you for considering my application. I would welcome the opportunity to discuss how my skills, enthusiasm, and fresh perspective could contribute to ADP's continued success in transforming human capital management through data-driven insights.
+
+\vspace{0.75em}
+
+Sincerely,
+
+\vspace{1em}
+
+Venu Dattathreya Vemuru
+
+\end{document}
